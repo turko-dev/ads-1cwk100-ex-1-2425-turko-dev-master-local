@@ -20,7 +20,7 @@ namespace ADSPortEx1
 
         public Guest(string name, double funds)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //comment
         }
 
         public string Name
