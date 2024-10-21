@@ -17,27 +17,30 @@ namespace ADSPortEx1
 
     class Guest : IComparable
     {
-
+        private string name;
+        private double funds;
         public Guest(string name, double funds)
         {
-            throw new NotImplementedException(); //comment
+            this.name = name;
+            this.funds = funds;
         }
 
         public string Name
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get { return name; }
+            set { name = value; }
         }
 
         public double Funds
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get { return funds; }
+            set { funds = value; }
         }
 
         public int CompareTo(object obj)
         {
-            throw new NotImplementedException();
+            Guest guest = (Guest)obj;
+            return name.CompareTo(guest.Name);
         }
 
 
