@@ -76,7 +76,7 @@ namespace ADSPortEx1
                 return false;
             }
         }
-
+        //lol
         public bool IsFull()
         {
             throw new NotImplementedException();
